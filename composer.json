@@ -1,0 +1,39 @@
+{
+    "name": "Jawiwy/mobilemoney",
+    "description": ":description",
+    "license": "OSL-1.1",
+    "authors": [{
+        "name": "james chege",
+        "email": "jawiwy@gmail.com",
+        "homepage": "https://jchege.me"
+    }],
+    "homepage": "https://github.com/Jawiwy/mobilemoney",
+    "keywords": ["Laravel", "MobileMoney"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jawiwy\\MobileMoney\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jawiwy\\MobileMoney\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jawiwy\\MobileMoney\\MobileMoneyServiceProvider"
+            ],
+            "aliases": {
+                "MobileMoney": "Jawiwy\\MobileMoney\\Facades\\MobileMoney"
+            }
+        }
+    }
+}
